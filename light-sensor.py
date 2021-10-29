@@ -15,10 +15,8 @@ from adafruit_circuitplayground import cp
 
 while True:
     if cp.light < 50:
-        timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-       
         data = {"timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                 "mensaje": "Se detecta presencia"}
         print(data)
-        
+
         time.sleep(5)
