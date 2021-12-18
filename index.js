@@ -18,13 +18,13 @@ const uri = "mongodb://localhost:27017/?maxPoolSize=20"; //se debe cambiar la IP
 const clientMongoDb = new MongoClient(uri);
 
 
-const pool = new Pool({
+/*const pool = new Pool({
     host: "localhost",
     user: "postgres",
     password: "root",
     database: "", //nombre bd
     port: 5432
-});
+});*/
 
 pool.on('error', (err, client) => {
     console.error('Unexpected error on idle client', err)
